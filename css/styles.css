@@ -1,0 +1,111 @@
+/*
+ * html/body styles for Off Canvas and Sticky Footer
+ * --------------------------------------------------
+ */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  /* Fixed navbar height */
+  padding-top: 70px;
+  
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  
+  /* Sticky footer */
+  min-height: 100%;
+  height: auto;
+  height: 100%;
+}
+
+
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .offcanvas {
+    position: relative;
+    min-height: 100%;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  
+  .offcanvas-right {
+    right: 0;
+  }
+  
+  .offcanvas-right.active {
+    right: 300px; 
+  }
+
+  .offcanvas-right .sidebar-offcanvas {
+    right: -100%; 
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .offcanvas-right.active .sidebar-offcanvas {
+    right: 0; 
+    border-left: 1px solid #e7e7e7;
+  }
+
+  .sidebar-offcanvas {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 300px; 
+    padding: 60px 15px 15px;
+    background-color: #f8f8f8;
+    border-radius: 0;
+    overflow-y: auto;
+    z-index: 1050;
+  }
+  
+  .sidebar-offcanvas .dropdown-menu {
+    border: medium none;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    float: none;
+    margin: 0;
+    padding-top: 0;
+    position: static;
+  }
+  
+  .navbar-toggler {
+    z-index: 1060;
+  }
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+.footer {
+  position: absolute;
+  bottom: 0 !important;
+  right: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+  -webkit-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+}
+
+.footer.offcanvas-right.active {
+  right: 300px; 
+}
+
