@@ -6,6 +6,9 @@ This is meant to replace the actual Dropdown Menu while keeping the original Mar
 
 * [Bootstrap 4](https://v4-alpha.getbootstrap.com) - Alpha 6
 
+## Demo
+* [https://trockendock.github.io/bootstrap4-offcanvas-nav/](https://trockendock.github.io/bootstrap4-offcanvas-nav/) - resize Browser or view it on a mobile phone
+
 
 ## Authors
 
